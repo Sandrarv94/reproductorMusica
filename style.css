@@ -7,16 +7,17 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #f0f0f0;
   text-align: center;
-  padding: 20px;
+  background-image: url("./imagenes/img2.jpg");
+  background-size: contain;
+  background-repeat:repeat;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    color: deepskyblue;
     font-size: 40px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 #imagenCancion{
@@ -24,23 +25,16 @@ header {
     height: 400px;
 }
 .contenedorCanciones {
-  background-color: #333;
-  color: #fff;
-  border: none;
   padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.contenedorCanciones:hover{
-    background-color: #444;
-}
 
 .imagenBotones {
   width: 80px;
   height: 80px;
+  background-color: lightgrey;
 }
+
 .caratula{
   display: inline-block;
   justify-content: center;
@@ -52,8 +46,8 @@ header {
   align-items: center;
   flex-direction: column;
   padding: 40px;
-  font-size: 32px;
-  color: deeppink;
+  font-size: 40px;
+  color: deepskyblue;
 }
 .dropdown {
   position: absolute;
@@ -62,11 +56,12 @@ header {
 }
 
 .dropdown-button {
-  background-color: #333;
-  color: #fff;
+  background-color: deeppink;
+  color: black;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
 }
 
