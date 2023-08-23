@@ -1,27 +1,27 @@
 const canciones = [
   {
-    name: "Song 1",
-    url: "./audios/song1.mp3",
-    artist: "Artist 1",
-    image: "./images/caratula1.svg",
+    name: "Amargura",
+    url: "./audios/amargura-letra-lyrics.mp3",
+    artist: "Karol G",
+    image: "./imagenes/caratulaAmargura.png",
   },
   {
-    name: "Song 2",
-    url: "./audios/song2.mp3",
-    artist: "Artist 2",
-    image: "./images/caratula2.svg",
+    name: "Karmika",
+    url: "./audios/y2mate.com - KÁRMIKA.mp3",
+    artist: "Karol G",
+    image: "./imagenes/caratulaKarmika.png",
   },
   {
-    name: "Song 3",
-    url: "./audios/song3.mp3",
-    artist: "Artist 3",
-    image: "./images/caratula3.svg",
+    name: "Carolina",
+    url: "./audios/y2mate.com - KAROL G  Carolina Visualizer.mp3",
+    artist: "Karol G",
+    image: "./imagenes/caratulaCarolina.png",
   },
   {
-    name: "Song 4",
-    url: "./audios/song4.mp3",
-    artist: "Artist 4",
-    image: "./images/caratula4.svg",
+    name: "PeroTu",
+    url: "./audios/y2mate.com - KAROL G Quevedo  Pero Tú Visualizer.mp3",
+    artist: "Karol G",
+    image: "./imagenes/caratulaPeroTu.png",
   },
 ];
 
@@ -40,6 +40,7 @@ const setCancion = () => {
   nombreArtista.src = canciones[cancionSeleccionada].artist;
   nombreArtista.innerHTML = nombreArtista.src =
     canciones[cancionSeleccionada].artist;
+    nombreCancion.innerHTML = nombreCancion.src = canciones[cancionSeleccionada].name;
 };
 
 let cancionSeleccionada = 0;
@@ -74,9 +75,9 @@ function reproducirOPausar(){
     if(reproductor.paused){
 
         reproductor.play();
-        imagenReproducirYPausa.src = "./images/btn-pausa.svg";    
+        imagenReproducirYPausa.src = "./imagenes/btn-pausa.svg";    
     }else{
         reproductor.pause();
-        imagenReproducirYPausa.src = "./images/btn-reproducir.svg";
+        imagenReproducirYPausa.src = "./imagenes/btn-reproducir.svg";
     }
 }

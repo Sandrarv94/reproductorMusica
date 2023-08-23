@@ -12,17 +12,19 @@
     </header>
     <main>
       <div class="caratula" id="caratula">
-        <h2 id="nombreCancion"></h2>
-        <p id="nombreArtista" hidden></p>
+        <div class="infoCancion">
+          <h2 id="nombreCancion"></h2>
+          <p id="nombreArtista" ></p>
+        </div>
         <img id="imagenCancion" src="" />
-        <div class="dropdown">
-          <button class="dropdown-button">...</button>
-          <div class="dropdown-content">
-            <a href="#" onclick="seleccionarCancion(0)">Song 1</a>
-            <a href="#" onclick="seleccionarCancion(1)">Song 2</a>
-            <a href="#" onclick="seleccionarCancion(2)">Song 3</a>
-            <a href="#" onclick="seleccionarCancion(3)">Song 4</a>
-          </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-button">...</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="seleccionarCancion(0)">Amargura</a>
+          <a href="#" onclick="seleccionarCancion(1)">Karmika</a>
+          <a href="#" onclick="seleccionarCancion(2)">Carolina</a>
+          <a href="#" onclick="seleccionarCancion(3)">Pero Tu</a>
         </div>
       </div>
 
@@ -32,7 +34,7 @@
           id="btn-anterior"
           onclick="pasarAAnteriorCancion()"
         >
-          <img class="imagenBotones" src="./images/btn-anterior.svg" alt="" />
+          <img class="imagenBotones" src="./imagenes/btn-anterior.svg" alt="" />
         </button>
         <button
           class="botones"
@@ -42,7 +44,7 @@
           <img
             class="imagenBotones"
             id="reproducir-pausa"
-            src="./images/btn-reproducir.svg"
+            src="./imagenes/btn-reproducir.svg"
             alt=""
           />
         </button>
@@ -54,7 +56,7 @@
           id="btn-siguiente"
           onclick="pasarASiguienteCancion()"
         >
-          <img class="imagenBotones" src="./images/btn-siguiente.svg" alt="" />
+          <img class="imagenBotones" src="./imagenes/btn-siguiente.svg" alt="" />
         </button>
       </div>
     </main>
